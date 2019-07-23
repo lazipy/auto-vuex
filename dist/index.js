@@ -9461,11 +9461,12 @@
     options.files.keys().forEach(key => {
       // 如果是getters.js
       if (key.startsWith('./getters.js')) {
-        getters = options.files(key).default;
+        console.log();
+        getters = options.files(key).default || options.files(key);
         return;
       }
       const path = key.slice(2, -3);
-      const storeModule = options.files(key).default;
+      const storeModule = options.files(key).default || options.files(key);
       modules$1[path] = storeModule;
     });
 
