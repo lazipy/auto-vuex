@@ -9453,10 +9453,7 @@ var index_esm = {
 let getters = {};
 let modules$1 = {};
 
-function autoVuex(options = {
-  files: require.context('../store', true, /\.js$/),
-  plugins: []
-}) {
+function autoVuex(options) {
   options.files.keys().forEach(key => {
     // 如果是getters.js
     if (key.startsWith('./getters.js')) {
