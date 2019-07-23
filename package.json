@@ -1,6 +1,6 @@
 {
   "name": "auto-vuex",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Automatic bulk registration of vuex module",
   "main": "dist/index.cjs.js",
   "scripts": {
